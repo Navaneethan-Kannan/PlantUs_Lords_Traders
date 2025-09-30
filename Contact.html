@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plantus lot Traders</title>
+        <link rel="icon" href="./img/favicon.png.png">
+        <link rel="stylesheet" href="./Project.css">
+        <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- animate.css  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+        <!-- On scrool AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        <!-- Awsome Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    <style>
+      html, body{
+        overflow-x:hidden;
+        width: 100%;
+        font-family: Host Grotesk, serif;
+       /* background-image: linear-gradient(to right, #FAF3E0, beige);*/
+      }
+    
+
+
+      /*  Map and contact */
+.division {
+      display: flex;
+      justify-content:space-between;
+      margin-top: 50px;
+      margin-left: 40px;
+      margin-right: 40px;
+
+    }
+
+    .contact {
+      background: linear-gradient(to bottom right, #7f7fd5, #86a8e7, #91eae4);
+      background-image: url("./img/contact.JPG");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 30px;
+      border-radius: 0px;
+      width: 350px;
+      filter: brightness(100%);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      color: #000;
+    }
+
+    .contact h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight:800;
+      letter-spacing: 1px;  
+    }
+    #con-item{
+        margin-top: 30px;
+}
+    .contact-item {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 0px;
+      margin-bottom: 50px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-icon {
+      background-color: #f7931e;
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+
+    }
+
+    .contact-info strong {
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+
+    /* Responsive design  map and contact*/
+    @media (max-width: 576px) {
+        .division {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 50px;
+          margin: 10px;
+        }
+  
+        .contact {
+          margin-left: 10px;
+          margin-right: 8px;
+          width: auto;
+        }
+  
+        iframe {
+          width: 100% !important;
+          height: 300px;
+        }
+      }
+
+    
+      .consticky{
+        display: grid;
+        gap: 15px;
+        right: -1%;
+        top:30%;
+        z-index:2;
+        position:fixed;
+        bottom: 50%;
+        border: 1px solid rgb(255, 250, 250);
+        background-color: white;
+        box-shadow: 1px 1px 5px black;
+        padding: 10px 16px;
+        border-radius: 5%;
+      }
+       #fackback:hover{
+        color: rgb(223, 51, 51);
+       }
+       .linkedin{
+        text-decoration: none;
+        color: #686666;
+       }
+
+    </style>
+    
+    
+    </head>
+<body>
+    <!-- On scrool script-->
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- <div class="mainpop"> -->
+    <div class="container-fluid headdum" style="padding:1px 10px">
+      <div class="d-flex justify-content-between align-items-center">
+          <!-- Menu Button (Left) -->
+          <button id="menu-btn" class="menu-btn">☰</button>
+
+          <!-- Centered Menu -->
+          <div id="menu-bar" class="animate__animated animate__fadeInLeft">
+              <ul id="add">
+                  <li><a href="./Plantus_home.html">HOME</a></li>
+                  <li><a href="./About.html">ABOUT US</a></li>
+                  <li><a href="./Brochure/PlantusLotTraders_Brochure.pdf" target="_blank">BROCHURE</a></li>
+                  <li><a href="./Product.html">OUR PRODUCTS</a></li>
+                  <li><a href="./Policy.html">POLICY</a></li>
+                  <li><a href="./Contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+
+          <!-- Logo & Company Name (Right) -->
+          <div class="d-flex align-items-center gap-3">
+              <img src="./img/final logo img.jpg" alt="logo" class="logo">
+              <span class="companyname mt-2">Plantus Lot Traders</span>
+          </div>
+      </div>
+    </div>
+
+  <style>
+
+      @media only screen and (max-width: 600px) {
+          .companyname {background: black;
+                      font-size:18px;
+                      padding-left: 0px;
+          }
+          .logo{
+              height: 50px;
+              width: 65px;
+          }
+          body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        }
+        #mail{
+          text-decoration: none;
+          color: #636262;
+          font-size: 12px;
+        }
+  </style>
+
+  <!--  Menu Bar script optional
+  <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+
+      // Toggle menu visibility
+      menuButton.addEventListener("click", () => {
+          menuBar.style.display = (menuBar.style.display === "block") ? "none" : "block";
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+          if (!menuButton.contains(event.target) && !menuBar.contains(event.target)) {
+              menuBar.style.display = "none";
+          }
+      });
+  </script> -->
+
+  <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+  
+      // Toggle the menu bar when the button is clicked
+      menuButton.addEventListener("click", () => {
+        if (menuBar.style.display === "block") {
+          menuBar.style.display = "none";
+        } else {
+          menuBar.style.display = "block";
+  
+          // Automatically close the menu after 10 seconds  
+          setTimeout(() => {
+            menuBar.style.display = "none";
+          }, 20000); // 10 seconds
+        }
+      });
+  
+      // Close the menu bar when any menu item is clicked
+      const menuItems = menuBar.querySelectorAll("a");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuBar.style.display = "none";
+        });
+      });
+    </script>
+
+<!-- Map and contact -->
+
+
+<div class="division">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.153097618287!2d80.2213001!3d13.089482000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265db328086d5%3A0x2b6025377c6fd7d0!2sAntispot!5e0!3m2!1sen!2sin!4v1737962404109!5m2!1sen!2sin" 
+      width="70%" height="500" allowfullscreen=""  style="border: none;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  
+    <div class="contact">
+      <h1>CONTACT</h1>
+  
+      <div class="contact-item" id="con-item">
+        <div class="contact-icon"><i class="fa-solid fa-phone" id="phone-icon" style="color:white; font-size:medium;"> </i></div>
+        <div class="contact-info">
+          <strong>Mr. Pranav Raj</strong>
+          <span style="color:#6b6a6a">+91-9677727246</span>
+        </div>
+      </div>
+  
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-info">
+          <strong>Mail</strong>
+           <span style="color:#5c5c5c" > <a id="mail" href="mailto:plantus.lottraders@gmail.com" target="_blank">plantus.lottraders@gmail.com</a></span>
+           <span style="color:#5c5c5c" ><a id="mail" href="mailto:contactus@plantuslottraders.com" target="_blank">contactus@plantuslottraders.com</a>
+          </span>
+
+        </div>
+      </div>
+  
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+        <div class="contact-info">
+          <strong>LinkedIn</strong>
+          <a  class="linkedin"  target="_blank"  href="https://www.linkedin.com/in/plantus-lot-traders-25750834b/"><span>Plantus Lot Traders</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="consticky">
+    <a href="https://m.facebook.com/profile.php?id=61572044416253&name=xhp_nt__fb__action__open_user" target="_blank"><i class="fa-brands fa-facebook" style="color: #fa9522;font-size:large"></i></a>
+    <a href="https://www.instagram.com/plantus_lot_traders?igsh=MTMwMGFyeGhsamRsdQ==" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fa9522; font-size:large"></i></a>
+    <a href="https://wa.me/919677277246?text=Hello!" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #fa9522; font-size:large"></i></a>
+  
+  </div>
+
+  <!-- Top scrool -->
+<button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i></button>
+
+<script>
+    window.onscroll = function() {
+        let scrollBtn = document.getElementById("scrollBtn");
+        if (document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+
+<!-- Footer -->
+<div id="footerimage">
+  <div class="footer">
+    <ul style="margin-left:50px;position:relative; list-style-type:none" id="footerul">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Company</span></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Plantus_home.html">Home</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./About.html">About Us</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Brochure/PlantusLotTraders_Brochure.pdf" target="_blank">Brochure</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html">Our Products</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Policy.html">Policy</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Contact.html">Contact Us</a></li>
+    </ul>
+
+    <ul class="footerproduct">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Our Products</span></li>
+
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-rice">Rice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-spices">Spice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-millets">Millets</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-oils">Oils</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-salt">Salts</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-health">Health</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CoconutProducts">Coconut products</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-fruits">Fruits</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Vegetables">Vegetables</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CleaningChemicals">Cleaning Chemicals</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-ConstructionMaterials">Construction Materials</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-MechanicalComponents">Mechanical Components</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Others">Others</a></li>
+
+    </ul>
+    
+    <div style="margin-top:30px">
+      <p id="address">
+        <a href="https://maps.app.goo.gl/kczAD1vzUwDPhi6X8" target="_blank"><i class="fa-solid fa-location-dot"  id="footer-icon" title="Go to Google Map" data-bs-toggle="tooltip"></i></a>Plantus Lot Traders,
+        No:13, 1st Main Rd, <br> <span style="margin-left: 30px;"> R.V. Nagar, Block I, Annanagar East,</span> <br> <span style="margin-left: 30px;">Chennai, Tamil Nadu 600102 </span></p><br>
+
+          
+          <p id="address"> <a href="https://globfone.com/call-phone/" target="_blank"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i></a>
+            Contact Person: Mr. Pranav Raj <br> <span style="margin-left: 30px;">+91-9677277246 </span> </p>  <br>
+            
+
+          <p id="address"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+          <p id="address"> <a href="mailto:contactus@plantuslottraders.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> contactus@plantuslottraders.com</p>
+
+
+          <img src="./img/QR code.png" title="Scan Location" data-bs-toggle="tooltip" alt="" style="height:100px; width:100px; margin-top:30px;">
+
+    </div>
+
+  </div>
+  <div class="cpy">
+    <p>© 2024 All Rights Reserved.</p>
+  </div>
+</div>
+
+<!-- Bootstrap tooltips-->
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+
+
+</body>
+</html>
